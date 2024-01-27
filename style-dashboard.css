@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-part, .bottom-part {
+    flex: 1;
+}
+
+.top-part{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    font-family: 'Sixtyfour', sans-serif;
+}
+.bottom-part{
+    display:flex;
+    flex-direction: row;
+}
+
+.planet{
+    margin: 1rem;
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9){
+    .background-clip{
+        width:100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .background-clip{
+        width:auto;
+        height:100%;
+    }
+}
+
+.lorb {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+    color:#fff;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.error {
+    color: red;
+}

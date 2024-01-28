@@ -1,7 +1,7 @@
 :root {
     --font-family: sans-serif;
     font-size: 16px;
-    --color-green: #06c167;
+    --color-green: #8232d1;
     --color-grey: rgb(238, 238, 238);
     --color-greyDarker: rgb(84, 84, 84);
   }
@@ -287,5 +287,6 @@
     font-size: 1rem; /* Adjust font size as needed */
     font-weight: 300; /* Adjust font weight as needed */
   }
+
 
 /*# sourceMappingURL=/main.d2070829.css.map */

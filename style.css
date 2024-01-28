@@ -84,7 +84,7 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
-    border
+    border:0;    
 }
 
 button:hover {

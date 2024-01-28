@@ -12,13 +12,40 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="container1">
+            <div class="logo">
+                <h1>Galactic<span>Grub</span></h1>
+            </div>
+            <div class = "currentDetails">
+                <div class = "header-option">
+                    <i data-feather="map-pin"></i>
+                    <span>Uranus</span>
+                </div>
+            </div>
+            <div class="searchBar">
+                <div class = "header-option">
+                    <i data-feather="search"></i>
+                    <span>Search</span>
+                </div>
+                <div class = "header-option">
+                    Sign In
+                </div>
+            </div>
+        </div>
+    </header> 
     <div class="container">
         <video autoplay loop muted plays-inline class="background-clip">
             <source src="images/the.mp4" type="video/mp4">
         </video>
         <div class="content">
             <div class="top-part">
-                <h1 style="color: #fff">"Best Choices in the Galaxy"</h1>
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+                <h></h>
+                <div style="font-size: 70px; color: #fff">Best Choices</div>
+                <div style="font-size: 70px; color: #fff">in the GALAXY.</div>
                 
             </div>
             <div class="bottom-part">
@@ -37,7 +64,7 @@
                 <div class="planet">
                     <button class="number col-sm d-flex justify-content-center align-items-center" name="number" value="1">Jupiter</button>
                 </div>
-                <div class="planet">
+                <div onclick="validateLogin()" class="planet">
                     <button class="number col-sm d-flex justify-content-center align-items-center" name="number" value="1">Uranus</button>
                 </div>
                 <div class="planet">
@@ -51,8 +78,15 @@
     </div>
 </body>
 
+<script src = "https://unpkg.com/feather-icons"></script>
 <script>
-
+    feather.replace()
 </script>
+
+<script>
+    function goUranus() {
+        window.location.href = "index.html";
+    }
+    </script>
 
 </html>

@@ -117,6 +117,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
+<<<<<<< HEAD
+})({"styles/main.css":[function(require,module,exports) {
+=======
 })({"../../../../../Users/ufota/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
@@ -170,6 +173,7 @@ function reloadCSS() {
 module.exports = reloadCSS;
 },{"./bundle-url":"../../../../../Users/ufota/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/main.css":[function(require,module,exports) {
 
+>>>>>>> 7c853d12e8f19fd0eb22cd6094d57c3da2789d1e
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -198,8 +202,12 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+<<<<<<< HEAD
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64485" + '/');
+=======
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "64830" + '/');
 
+>>>>>>> 7c853d12e8f19fd0eb22cd6094d57c3da2789d1e
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -343,7 +351,10 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7c853d12e8f19fd0eb22cd6094d57c3da2789d1e
 },{}],"../../../../../Users/ufota/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
@@ -457,5 +468,8 @@ module.exports = function loadJSBundle(bundle) {
 },{}],0:[function(require,module,exports) {
 var b=require("../../../../../Users/ufota/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("js",require("../../../../../Users/ufota/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/loaders/browser/js-loader.js"));b.load([]);
 },{}]},{},["../../../../../Users/ufota/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7c853d12e8f19fd0eb22cd6094d57c3da2789d1e
 //# sourceMappingURL=/main.d2070829.js.map

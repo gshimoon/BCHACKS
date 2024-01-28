@@ -3,78 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        #loginForm {
-            width: 300px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            box-sizing: border-box;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4caf50;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+        @import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+      </style>
+    <title>Document</title>
 </head>
 <body>
-
-<div id="loginForm">
-    <h2>Login</h2>
-    <form onsubmit="return validateForm()">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit">Login</button>
-    </form>
-</div>
+    <div class="container">
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="images/the.mp4" type="video/mp4">
+        </video>
+    
+        <div class="content">
+            <h1 style="font-size: 40px;">Welcome Back!</h1>
+            <div class="lorb">
+                <div id="error-msg" class="error"></div>
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="username" required>
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="password" required>
+                <button onclick="validateLogin()">Login</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
 
 <script>
-    function validateForm() {
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-
-        // Check against specific credentials
-        if (username === "bchacks" && password === "1234") {
-            alert("Login successful!");
-        } else {
-            alert("Invalid username or password. Please try again.");
-        }
-
-        // Prevent the form from submitting
-        return false;
+function validateLogin() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var errorMessage = document.getElementById('error-msg');
+    // Example validation (replace with your own logic)
+    if (username === "bchacks" && password === "password") {
+        
+        errorMessage.innerHTML = ""; // Clear previous error message
+        window.location.href = "splash2.html";
+    } else {
+        errorMessage.innerHTML = "Invalid username or password";
     }
+}
 </script>
 
-</body>
 </html>

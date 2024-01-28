@@ -226,4 +226,12 @@
     font-size: 1rem;
     color: black;
   }
-  
+
+  .links{
+    text-decoration: none;
+    color:inherit;
+  }
+  .links:hover {
+    /* Example: Add a slight opacity change on hover */
+    opacity: 0.9;
+}

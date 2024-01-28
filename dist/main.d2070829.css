@@ -234,6 +234,34 @@
   .links:hover {
     /* Example: Add a slight opacity change on hover */
     opacity: 0.9;
-}
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjusted for smaller circles */
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .restaurant {
+    width: 120px; /* Fixed width for circles */
+    height: 120px; /* Fixed height for circles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #e95950; /* Instagram-like gradient border */
+    border-radius: 50%; /* Makes the div circular */
+    overflow: hidden; /* Ensures the image doesn't overflow the circular div */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Adds a subtle shadow for depth */
+  }
+  
+  .restaurant img {
+    width: 100%; /* Makes the image fill the container */
+    height: 100%; /* Makes the image fill the container */
+    object-fit: cover; /* Ensures the image covers the div without stretching */
+    border-radius: 50%; /* Circular shape */
+  }
+  
 
 /*# sourceMappingURL=/main.d2070829.css.map */

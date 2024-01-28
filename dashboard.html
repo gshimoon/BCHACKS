@@ -12,67 +12,76 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="container1">
-            <div class="logo">
-                <h1>Galactic<span>Grub</span></h1>
-            </div>
-            <div class = "currentDetails">
-                <div class = "header-option">
-                    <i data-feather="map-pin"></i>
-                    <span>Uranus</span>
-                </div>
-            </div>
-            <div class="searchBar">
-                <div class = "header-option">
-                    <i data-feather="search"></i>
-                    <span>Search</span>
-                </div>
-                <div class = "header-option">
-                    Sign In
-                </div>
-            </div>
-        </div>
-    </header> 
+
     <div class="container">
         <video autoplay loop muted plays-inline class="background-clip">
             <source src="images/the.mp4" type="video/mp4">
         </video>
         <div class="content">
+            <header>
+                <div class="container1">
+                    <div class="logo">
+                        <h1>Galactic<span>Grub</span></h1>
+                    </div>
+                    <div class = "currentDetails">
+                        <div class = "header-option">
+                            <i data-feather="map-pin"></i>
+                            <span>Select Your Planet!</span>
+                        </div>
+                    </div>
+                    <div class="searchBar">
+                        <div class = "header-option">
+                            <i data-feather="search"></i>
+                            <span>Search</span>
+                        </div>
+                        
+                        <div class = "header-option">
+                            <a href="intro.html">LogIn</a>
+                        </div>
+                    </div>
+                </div>
+            </header> 
             <div class="top-part">
-                <h1></h1>
-                <h1></h1>
-                <h1></h1>
-                <h></h>
                 <div style="font-size: 70px; color: #fff">Best Choices</div>
                 <div style="font-size: 70px; color: #fff">in the GALAXY.</div>
                 
             </div>
             <div class="bottom-part">
-                <div class="planet">
-                    <button class="number col-sm d-flex justify-content-center align-items-center" name="number" value="1">Mercury</button>
+                <div onclick="location.href='mercury.html';" style="cursor: pointer;" class="planet14">
+                    <img src="images/mercury.png">
+                    <div>Mercury</div>
                 </div>
-                <div class="planet">
-                    <button class="number col-sm d-flex justify-content-center align-items-center" name="number" value="1">Venus</button>
+                <div  onclick="location.href='venus.html';" style="cursor: pointer;" class="planet23">
+                    <img src="images/venus.png">
+                    <div>Venus</div>
                 </div>
-                <div class="planet">
-                    <button class="number col-sm d-flex justify-content-center align-items-center" name="number" value="1">Earth</button>
+                <div  onclick="location.href='earth.html';" style="cursor: pointer;" class="planet23">
+                    <img src="images/earth.png">
+                    <div>Earth</div>
                 </div>
-                <div class="planet">
-                    <button class="number col-sm d-flex justify-content-center align-items-center" name="number" value="1">Mars</button>
+                <div  onclick="location.href='mars.html';" style="cursor: pointer;" class="planet14">
+                    <img src="images/mars.png">
+                    <div>Mars</div>
                 </div>
-                <div class="planet">
-                    <button class="number col-sm d-flex justify-content-center align-items-center" name="number" value="1">Jupiter</button>
+                <div  onclick="location.href='jupiter.html';" style="cursor: pointer;" class="planet56">
+                    <img src="images/jupiter.png">
+                    <div>Jupiter</div>
                 </div>
-                <div onclick="validateLogin()" class="planet">
-                    <button class="number col-sm d-flex justify-content-center align-items-center" name="number" value="1">Uranus</button>
+                <div  onclick="location.href='saturn.html';" style="cursor: pointer;" class="planet56">
+                    <img src="images/saturn.png">
+                    <div>Saturn</div>
                 </div>
-                <div class="planet">
-                    <button class="number col-sm d-flex justify-content-center align-items-center" name="number" value="1">Neptune</button>
+                <div  onclick="location.href='index.html';" style="cursor: pointer;" class="planet78">
+                    <img src="images/uranus.png">
+                    <div>Uranus</div>
                 </div>
-                <div class="planet">
+                <div  onclick="location.href='neptune.html';" style="cursor: pointer;" class="planet78">
+                    <img src="images/neptune.png">
+                    <div>Neptune</div>
+                </div>
+                <!-- <div class="planet">
                     <button class="number col-sm d-flex justify-content-center align-items-center" name="number" value="1">Saturnus</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -87,6 +96,10 @@
     function goUranus() {
         window.location.href = "index.html";
     }
-    </script>
+
+    function toLogin() {
+        window.location.href="intro.html";    
+    }
+</script>
 
 </html>

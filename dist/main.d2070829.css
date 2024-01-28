@@ -229,6 +229,7 @@
     color: black;
   }
 
+
   .links{
     text-decoration: none;
     color:inherit;
@@ -287,6 +288,25 @@
     font-size: 1rem; /* Adjust font size as needed */
     font-weight: 300; /* Adjust font weight as needed */
   }
+
+  
+  .options {
+    position: relative; 
+}
+
+
+.header-title h1 {
+  margin-top: -25px;
+  font-size: 50px; /* Guys this is for the name of the restaurant! */
+  margin-bottom: 10px; 
+}
+
+
+.header-title span {
+  font-size: 18px; 
+  display: block;
+}
+
 
 
 /*# sourceMappingURL=/main.d2070829.css.map */

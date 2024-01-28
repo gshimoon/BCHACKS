@@ -35,9 +35,9 @@ function validateLogin() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
     var errorMessage = document.getElementById('error-msg');
-
     // Example validation (replace with your own logic)
     if (username === "bchacks" && password === "password") {
+        
         errorMessage.innerHTML = ""; // Clear previous error message
         window.location.href = "splash2.html";
     } else {

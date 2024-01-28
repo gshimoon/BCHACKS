@@ -75,6 +75,8 @@
     display: inline-flex;
     align-items: center;
     margin-right: 0.3rem;
+    text-decoration: none;
+    color:inherit;
   }
   
   .options .options-btn svg {
@@ -226,6 +228,67 @@
     font-size: 1rem;
     color: black;
   }
+
+
+  .links{
+    text-decoration: none;
+    color:inherit;
+  }
+  .links:hover {
+    /* Example: Add a slight opacity change on hover */
+    opacity: 0.9;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjusted for smaller circles */
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .restaurant {
+    width: 120px;
+    height: auto;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px; /* Space between restaurant items */
+  }
+  
+  .restaurant-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the text color is inherited and not automatically blue */
+  }
+
+  .restaurant-img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .restaurant-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .restaurant span {
+    margin-top: 10px; /* Space between image and text */
+    color: var(--color-greyDarker); /* Example text color */
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: 300; /* Adjust font weight as needed */
+  }
+
   
   .options {
     position: relative; 
@@ -242,4 +305,3 @@
 .header-title span {
   font-size: 18px; 
   display: block;
-}

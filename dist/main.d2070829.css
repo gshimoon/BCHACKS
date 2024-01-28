@@ -306,4 +306,19 @@
   font-size: 18px; 
   display: block;
 }
+
+.total{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.left, .right, .buynow{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
 /*# sourceMappingURL=/main.d2070829.css.map */

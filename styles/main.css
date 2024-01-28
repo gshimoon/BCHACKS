@@ -75,6 +75,8 @@
     display: inline-flex;
     align-items: center;
     margin-right: 0.3rem;
+    text-decoration: none;
+    color:inherit;
   }
   
   .options .options-btn svg {
@@ -245,21 +247,43 @@
   }
   
   .restaurant {
-    width: 120px; /* Fixed width for circles */
-    height: 120px; /* Fixed height for circles */
+    width: 120px;
+    height: auto;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px; /* Space between restaurant items */
+  }
+  
+  .restaurant-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the text color is inherited and not automatically blue */
+  }
+
+  .restaurant-img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #e95950; /* Instagram-like gradient border */
-    border-radius: 50%; /* Makes the div circular */
-    overflow: hidden; /* Ensures the image doesn't overflow the circular div */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Adds a subtle shadow for depth */
   }
   
-  .restaurant img {
-    width: 100%; /* Makes the image fill the container */
-    height: 100%; /* Makes the image fill the container */
-    object-fit: cover; /* Ensures the image covers the div without stretching */
-    border-radius: 50%; /* Circular shape */
+  .restaurant-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
   }
   
+  .restaurant span {
+    margin-top: 10px; /* Space between image and text */
+    color: var(--color-greyDarker); /* Example text color */
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: 300; /* Adjust font weight as needed */
+  }

@@ -306,4 +306,29 @@
   font-size: 18px; 
   display: block;
 }
+
+.total{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.left, .right, .buynow{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.error-message {
+  font-size: 40px;
+  font-family: 'DM Serif Display', serif;
+  position: fixed; /* or 'absolute' depending on your layout */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
 /*# sourceMappingURL=/main.d2070829.css.map */
